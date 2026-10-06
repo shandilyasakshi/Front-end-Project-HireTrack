@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applications — HireTrack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="dashboard.html"><span class="brand-mark">♥</span><span>HireTrack</span></a>
+      <nav class="side-nav">
+        <a href="dashboard.html"><span>⌂</span>Dashboard</a>
+        <a class="active" href="applications.html"><span>▣</span>Applications</a>
+        <a href="settings.html"><span>⚙</span>Settings</a>
+      </nav>
+      <div class="sidebar-user"><div class="avatar">S</div><div><strong>Sakshi Shandilya</strong><small>3rd Year CSE</small></div></div>
+    </aside>
+
+    <main class="app-main">
+      <div class="topbar">
+        <div><h1>Applications</h1><p>Manage and track all your internship applications.</p></div>
+        <button class="btn btn-primary" data-open-modal>＋ Add Application</button>
+      </div>
+
+      <div class="toolbar panel">
+        <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search companies, roles..."></div>
+        <select id="statusFilter"><option>All Status</option><option>Applied</option><option>Interview</option><option>Assessment</option><option>Rejected</option><option>Selected</option></select>
+        <select id="sortFilter"><option>Sort by: Recent</option><option>Sort by: Company</option><option>Sort by: Status</option></select>
+        <button class="view-btn active">▦</button><button class="view-btn">☷</button>
+      </div>
+
+      <section id="applicationCards" class="cards-grid">
+        <article class="application-card" data-company="Google" data-role="Software Engineering Intern" data-status="Interview">
+          <div class="card-company"><span class="company-icon google">G</span><span>Google</span><button>⋮</button></div>
+          <h3>Software Engineering Intern</h3><p>Bengaluru, India</p><span class="pill interview">Interview</span><div class="card-bottom"><small>May 10, 2025</small><a href="application-details.html">View →</a></div>
+        </article>
+        <article class="application-card" data-company="TCS" data-role="Software Engineer Intern" data-status="Applied">
+          <div class="card-company"><span class="company-icon tcs">T</span><span>TCS</span><button>⋮</button></div>
+          <h3>Software Engineer Intern</h3><p>Mumbai, India</p><span class="pill applied">Applied</span><div class="card-bottom"><small>May 8, 2025</small><a href="application-details.html">View →</a></div>
+        </article>
+        <article class="application-card" data-company="Microsoft" data-role="Software Engineering Intern" data-status="Assessment">
+          <div class="card-company"><span class="company-icon microsoft">▦</span><span>Microsoft</span><button>⋮</button></div>
+          <h3>Software Engineering Intern</h3><p>Bengaluru, India</p><span class="pill assessment">Assessment</span><div class="card-bottom"><small>May 5, 2025</small><a href="application-details.html">View →</a></div>
+        </article>
+        <article class="application-card" data-company="Amazon" data-role="SDE Intern" data-status="Wishlist">
+          <div class="card-company"><span class="company-icon amazon">a</span><span>Amazon</span><button>⋮</button></div>
+          <h3>SDE Intern</h3><p>Bengaluru, India</p><span class="pill wishlist">Wishlist</span><div class="card-bottom"><small>Apr 28, 2025</small><a href="application-details.html">View →</a></div>
+        </article>
+        <article class="application-card" data-company="Walmart" data-role="Software Development Intern" data-status="Applied">
+          <div class="card-company"><span class="company-icon walmart">W</span><span>Walmart</span><button>⋮</button></div>
+          <h3>Software Development Intern</h3><p>Remote</p><span class="pill applied">Applied</span><div class="card-bottom"><small>Apr 25, 2025</small><a href="application-details.html">View →</a></div>
+        </article>
+        <article class="application-card" data-company="Meta" data-role="Frontend Intern" data-status="Rejected">
+          <div class="card-company"><span class="company-icon meta">∞</span><span>Meta</span><button>⋮</button></div>
+          <h3>Frontend Intern</h3><p>Bengaluru, India</p><span class="pill rejected">Rejected</span><div class="card-bottom"><small>Apr 20, 2025</small><a href="application-details.html">View →</a></div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>

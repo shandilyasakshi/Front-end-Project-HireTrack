@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — HireTrack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="dashboard.html"><span class="brand-mark">♥</span><span>HireTrack</span></a>
+      <nav class="side-nav">
+        <a class="active" href="dashboard.html"><span>⌂</span>Dashboard</a>
+        <a href="applications.html"><span>▣</span>Applications</a>
+        <a href="settings.html"><span>⚙</span>Settings</a>
+      </nav>
+      <div class="sidebar-user">
+        <div class="avatar">S</div>
+        <div><strong>Sakshi Shandilya</strong><small>3rd Year CSE</small></div>
+      </div>
+    </aside>
+
+    <main class="app-main">
+      <div class="topbar">
+        <div>
+          <h1>Good morning, Sakshi! 👋</h1>
+          <p>Here’s your internship journey at a glance.</p>
+        </div>
+        <button class="btn btn-primary" data-open-modal>＋ Add Application</button>
+      </div>
+
+      <section class="stats-grid">
+        <div class="stat-card"><span>Total Applications</span><strong id="totalApplications">12</strong><small class="positive">↗ +3 this month</small></div>
+        <div class="stat-card"><span>Interviews</span><strong>3</strong><small class="positive">↗ +1 this month</small></div>
+        <div class="stat-card"><span>Offers</span><strong>1</strong><small class="positive">↗ +1 this month</small></div>
+        <div class="stat-card"><span>Rejections</span><strong>2</strong><small>↗ +0 this month</small></div>
+      </section>
+
+      <section class="dashboard-grid">
+        <div class="panel status-panel">
+          <div class="panel-head"><h2>Application Status</h2></div>
+          <div class="status-content">
+            <div class="donut"><div><strong>12</strong><span>Total</span></div></div>
+            <ul class="legend">
+              <li><span class="dot wishlist"></span>Wishlist <b>2</b></li>
+              <li><span class="dot applied"></span>Applied <b>4</b></li>
+              <li><span class="dot assessment"></span>Assessment <b>2</b></li>
+              <li><span class="dot interview"></span>Interview <b>3</b></li>
+              <li><span class="dot selected"></span>Selected <b>1</b></li>
+              <li><span class="dot rejected"></span>Rejected <b>0</b></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head"><h2>Upcoming Deadlines</h2><a href="applications.html">View all →</a></div>
+          <div class="deadline-list">
+            <div><span class="company-icon google">G</span><div><b>Google</b><small>Application deadline</small></div><strong>2 days left</strong></div>
+            <div><span class="company-icon tcs">T</span><div><b>TCS</b><small>Assessment deadline</small></div><strong>5 days left</strong></div>
+            <div><span class="company-icon microsoft">▦</span><div><b>Microsoft</b><small>Application deadline</small></div><strong>12 days left</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head"><h2>Recent Applications</h2><a href="applications.html">View all →</a></div>
+        <div class="application-list">
+          <a class="application-row" href="application-details.html"><span class="company-icon google">G</span><div><b>Google</b><small>Software Engineering Intern</small></div><span class="pill interview">Interview</span><time>May 10, 2025</time><span>›</span></a>
+          <a class="application-row" href="application-details.html"><span class="company-icon tcs">T</span><div><b>TCS</b><small>Software Engineering Intern</small></div><span class="pill applied">Applied</span><time>May 8, 2025</time><span>›</span></a>
+          <a class="application-row" href="application-details.html"><span class="company-icon microsoft">▦</span><div><b>Microsoft</b><small>Software Engineering Intern</small></div><span class="pill assessment">Assessment</span><time>May 5, 2025</time><span>›</span></a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
