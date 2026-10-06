@@ -1,25 +1,37 @@
-HIRETRACK — HTML/CSS/JavaScript UI
+HireTrack 🚀
 
-This is a front-end implementation based on the supplied HireTrack UI/UX reference.
+Track. Apply. Get Hired.
 
-PAGES
-1. index.html — Landing / Home
-2. dashboard.html — Dashboard
-3. applications.html — Applications list
-4. application-details.html — Application details
-5. settings.html — Profile / Settings
+HireTrack is a modern internship and job application tracking platform built to help students organize their applications, track progress, manage deadlines, and stay on top of their career opportunities.
 
-SHARED ASSETS
-1. css/style.css — all styling, responsive layouts, colors, typography, cards and components
-2. js/app.js — modal, search/filter, theme switcher and localStorage demo behavior
+✨ Features
 
-RUN
-1. Keep the folder structure unchanged.
-2. Open index.html in a browser.
-3. For the best experience, use VS Code + Live Server.
+- 📊 Application dashboard with key statistics
+- 📋 Add and manage internship/job applications
+- 🔎 Search and filter applications
+- 🔄 Track application status
+- 📅 Monitor upcoming deadlines
+- 📝 Store application notes and details
+- 👤 Profile and settings management
+- 🌙 Light/Dark mode
+- 📱 Responsive design
 
-IMPORTANT
-This is a front-end prototype. It does not include a real backend, authentication, database, AI service, or real job-board APIs yet.
+🛠️ Tech Stack
 
-SUGGESTED NEXT STEP
-Connect the forms and application records to a backend such as Node.js/Express + MongoDB or Firebase/Supabase. Then replace the hard-coded dashboard data with API data.
+- HTML5 – Structure
+- CSS – UI/UX and responsive design
+- JavaScript – Interactions and functionality
+- LocalStorage – Demo data persistence
+
+📂 Project Structure
+HireTrack/
+├── index.html
+├── dashboard.html
+├── applications.html
+├── application-details.html
+├── settings.html
+├── css/
+│   └── style.css
+├── js/
+│   └── app.js
+└── README.md
